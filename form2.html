@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2 - Textarea</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background: #f4f6f9;
+        }
+
+        form {
+            max-width: 500px;
+            padding: 22px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        #alamat {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #888;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        button {
+            margin-top: 12px;
+            padding: 9px 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Form Alamat</h1>
+
+    <form onsubmit="event.preventDefault(); alert('Alamat: ' + document.getElementById('alamat').value);">
+
+        <label for="alamat">Masukkan alamat lengkap:</label>
+
+        <br><br>
+
+        <textarea
+            id="alamat"
+            name="alamat"
+            rows="5"
+            cols="40"
+            placeholder="Contoh: Jalan Mawar No. 10, Surabaya"
+            required>
+        </textarea>
+
+        <br>
+
+        <button type="submit">Kirim</button>
+
+    </form>
+
+</body>
+</html>
